@@ -1,0 +1,14 @@
+caseId,desc,isOpen,data,
+case1,传多个身份证表单数据提交完整数据,1,sequence=1&provice=浙江省&city=杭州市&country=滨江区&gender=Male&birthday=19911016&number=1|sequence=2&provice=浙江省&city=杭州市&gender=Male&birthday=19911016&number=1|sequence=2&provice=浙江省&city=衢州市&gender=Male&birthday=19911016&number=1
+case2,传1个身份证表单数据提交完整数据-男,1,sequence=1&provice=浙江省&city=杭州市&country=滨江区&gender=Male&birthday=19911016&number=1
+case3,传1个身份证表单数据提交完整数据-女,1,sequence=1&provice=浙江省&city=杭州市&country=滨江区&gender=Female&birthday=19911016&number=1
+case4,传1个身份证表单数据只传省,1,sequence=1&number=1&provice=浙江省
+case5,传1个身份证表单数据只传省、市,1,sequence=1&number=2&provice=浙江省&city=衢州市
+case6,传1个身份证表单数据只传省、市、区,1,sequence=1&number=2&provice=浙江省&city=衢州市&country=衢江区
+case7,传1个身份证表单数据只传出生日期,1,sequence=1&number=2&birthday=19911016
+case8,传1个身份证表单数据只传性别,1,sequence=1&number=2&gender=female
+case9,传1个身份证表单数据只传省市区+性别,1,sequence=1&number=2&provice=浙江省&city=杭州市&country=滨江区&gender=Male
+case10,传1个身份证表单数据只传省市区+出生日期,1,sequence=1&number=2&provice=浙江省&city=杭州市&country=滨江区&birthday=19911016
+case11,传1个身份证表单数据只传性别+出生日期,1,sequence=1&number=2&gender=Male&birthday=19911016
+case12,传1个身份证表单数据number=N,1,sequence=1&provice=浙江省&city=杭州市&country=滨江区&gender=Male&birthday=19911016&number=10
+case13,传1个身份证表单数据number=0,1,sequence=1&provice=浙江省&city=杭州市&country=滨江区&gender=Male&birthday=19911016&number=0

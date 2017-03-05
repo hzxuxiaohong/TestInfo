@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+    <classes>
+      <class name="com.netease.qa.webApiTest.test.NewTest"/>
+      <methods preserve-order="true">
+      	<include name = "ha"/>
+      	<include name = "hahha"/>
+      </methods>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

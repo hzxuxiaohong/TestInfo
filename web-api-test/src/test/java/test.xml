@@ -1,0 +1,30 @@
+<test name="xxxx">
+　　<!-- 参数定义的方法 -->
+　　<parameter name="first-name" value="Cedric"/>
+
+　　<!-- groups的用法，前提是需要存在classes的组，否则所有方法不被运行 -->
+　　<groups>
+　　<!-- 定义组中组的方法 -->
+　　　　<define name="groups_name">
+　　　　　　<include name="group1"/>
+　　　　　　<include name="group2"/>
+　　　　</define>
+
+　　　　<run>
+　　　　　　<!-- 此处用组名来区别 -->
+　　　　　　<inclue name="groups_name" />
+　　　　　　<exclue name="groups_name" />
+　　　　　　</run>
+　　</groups>
+
+　　<!-- classes的用法，classes中包含类名，类名底下可以包含方法名或排除方法名 -->
+　　<classes>
+　　　　<class name="class1">
+　　　　　　<methods>
+　　　　　　　　<!-- 此处用方法名来区别 -->
+　　　　　　　　<inclue name="method_name" />
+　　　　　　　　<exclue name="method_name" />
+　　　　　　</methods>
+　　　　</class>
+　　</classes>
+</test>
